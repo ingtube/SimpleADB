@@ -100,6 +100,20 @@ export class SimpleADB {
     }
 
     /**
+     * @method connectDevice
+     *
+     * @param {string} deviceId
+     *
+     * @return {Promise}
+     *
+     * @public
+     */
+    connectDevice(deviceId) {
+            this.adbDevice = deviceId;
+            return 0;
+    }
+
+    /**
      * @method disconnect
      *
      * @return {Promise}
